@@ -50,6 +50,21 @@ export class CreateAchievementDto {
   @IsOptional()
   @IsBoolean()
   isActive?: boolean;
+
+  @ApiProperty({ required: false })
+  @IsOptional()
+  @IsString()
+  nftImage?: string;
+
+  @ApiProperty({ required: false })
+  @IsOptional()
+  @IsString()
+  nftExternalUrl?: string;
+
+  @ApiProperty({ required: false })
+  @IsOptional()
+  @IsString()
+  nftAnimationUrl?: string;
 }
 
 export class UserAchievementDto {

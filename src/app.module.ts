@@ -11,6 +11,7 @@ import { NewsVerificationModule } from './news-verification/news-verification.mo
 import { CustomAlertsModule } from './custom-alerts/custom-alerts.module';
 
 import { TradeSignalsModule } from './trade-signals/trading-signals.module';
+import { DexScreenerModule } from './dex-screener/dex-screener.module';
 @Module({
   imports: [
     AchievementsModule, 
@@ -21,6 +22,7 @@ import { TradeSignalsModule } from './trade-signals/trading-signals.module';
     NewsVerificationModule,
     CustomAlertsModule,
     TradeSignalsModule,
+    DexScreenerModule,
   ],
   controllers: [AppController],
   providers: [AppService],

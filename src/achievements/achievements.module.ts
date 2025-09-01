@@ -6,13 +6,15 @@ import { UserPoints } from './entities/user-points.entity';
 import { AchievementService } from './services/achievement.service';
 import { NotificationService } from './services/notification.service';
 import { AchievementController } from './controllers/achievement.controller';
+import { Nft } from './entities/nft.entity';
+import { NftService } from './services/nft.service';
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([Achievement, UserAchievement, UserPoints]),
+    TypeOrmModule.forFeature([Achievement, UserAchievement, UserPoints, Nft]),
   ],
   controllers: [AchievementController],
-  providers: [AchievementService, NotificationService],
+  providers: [AchievementService, NotificationService, NftService],
   exports: [AchievementService],
 })
 export class AchievementsModule {}
